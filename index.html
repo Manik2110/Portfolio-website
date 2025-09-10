@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manik Joshi - Computer Science Student & Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Sticky Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+  <a href="#home" class="nav-logo-link">
+    <img src="images/logo.png" alt="Manik Joshi" class="nav-logo-img">
+    <!-- optional text label beside the image:
+    <span class="logo-text">MJ</span>
+    -->
+  </a>
+</div>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certifications" class="nav-link">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content fade-in">
+                <div class="hero-avatar">
+                    <div class="avatar-placeholder">
+                        <img src="images/profile.jpg" alt="Manik Joshi" class="avatar-img">
+                    </div>
+                </div>
+                <h1 class="hero-name">MANIK JOSHI</h1>
+                <p class="hero-title">Computer Science Student & Developer</p>
+                <div class="hero-contact">
+                    <a href="mailto:manikjoshi1988@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>manikjoshi1988@gmail.com</span>
+                    </a>
+                    <a href="tel:7351972812" class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 7351972812</span>
+                    </a>
+                    <a href="https://github.com/Manik2110" target="_blank" class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub Profile</span>
+                    </a>
+                </div>
+                <button class="btn btn--primary hero-cta" onclick="scrollToSection('contact')">
+                    Contact Me
+                </button>
+            </div>
+        </div>
+        <div class="hero-bg-animation"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title slide-up">About Me</h2>
+            <div class="about-content slide-up">
+                <p>I'm a passionate Computer Science student at Birla Institute of Applied Sciences, currently pursuing my B.Tech degree with a strong academic record of 80%. I have a deep interest in technology and software development, with hands-on experience in various programming languages and modern development tools.</p>
+                <p>My journey in computer science has been driven by curiosity and a desire to solve real-world problems through technology. I enjoy working on innovative projects that combine theoretical knowledge with practical applications, particularly in areas like machine learning, web development, and cloud technologies.</p>
+                <p>When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and continuously learning about emerging trends in the tech industry.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title slide-up">Education</h2>
+            <div class="education-timeline">
+                <div class="timeline-item slide-up" data-delay="0.1">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Oct 2021 - Jul 2025</div>
+                        <h3>B.Tech in Computer Science</h3>
+                        <p class="institute">Birla Institute of Applied Sciences</p>
+                        <div class="score">80.00%</div>
+                    </div>
+                </div>
+                <div class="timeline-item slide-up" data-delay="0.2">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021</div>
+                        <h3>Intermediate (C.B.S.E)</h3>
+                        <p class="institute">Sri Sai Public School</p>
+                        <div class="score">91.80%</div>
+                    </div>
+                </div>
+                <div class="timeline-item slide-up" data-delay="0.3">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2019</div>
+                        <h3>Matriculation (C.B.S.E)</h3>
+                        <p class="institute">Sri Sai Public School</p>
+                        <div class="score">81.00%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title slide-up">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category slide-up" data-delay="0.1">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="C">C</div>
+                        <div class="skill-item" data-skill="Java">Java</div>
+                        <div class="skill-item" data-skill="Python">Python</div>
+                        <div class="skill-item" data-skill="SQL">SQL</div>
+                    </div>
+                </div>
+                <div class="skill-category slide-up" data-delay="0.2">
+                    <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="HTML5">HTML5</div>
+                        <div class="skill-item" data-skill="CSS3">CSS3</div>
+                        <div class="skill-item" data-skill="Node.js">Node.js</div>
+                        <div class="skill-item" data-skill="Visual Studio">Visual Studio</div>
+                        <div class="skill-item" data-skill="Eclipse">Eclipse</div>
+                        <div class="skill-item" data-skill="GitHub">GitHub</div>
+                        <div class="skill-item" data-skill="Git">Git</div>
+                    </div>
+                </div>
+                <div class="skill-category slide-up" data-delay="0.3">
+                    <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="Docker">Docker</div>
+                        <div class="skill-item" data-skill="GitLab">GitLab</div>
+                        <div class="skill-item" data-skill="Linux">Linux</div>
+                        <div class="skill-item" data-skill="Kubernetes">Kubernetes</div>
+                        <div class="skill-item" data-skill="AWS">AWS</div>
+                        <div class="skill-item" data-skill="Flask">Flask</div>
+                        <div class="skill-item" data-skill="REST APIs">REST APIs</div>
+                    </div>
+                </div>
+                <div class="skill-category slide-up" data-delay="0.4">
+                    <h3><i class="fas fa-lightbulb"></i> Soft Skills</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="Leadership">Collaborative Leadership</div>
+                        <div class="skill-item" data-skill="Analytics">Problem Analytics</div>
+                        <div class="skill-item" data-skill="Learning">Quick Learner</div>
+                        <div class="skill-item" data-skill="Communication">Strong Communication</div>
+                        <div class="skill-item" data-skill="Thinking">Critical Thinking</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title slide-up">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card slide-up" data-delay="0.1">
+                    <div class="project-header">
+                        <h3>Psychology Report Generator</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">RPPG</span>
+                            <span class="tech-tag">Twilio</span>
+                            <span class="tech-tag">LLM</span>
+                            <span class="tech-tag">Deep Learning</span>
+                            <span class="tech-tag">Computer Vision</span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>Developed AI model processing 19,000+ video samples achieving 91% real-time accuracy for mental health diagnostics. Engineered machine learning pipeline improving assessment speed by 40%. Implemented computer vision algorithms with deep learning frameworks.</p>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/Manik2110/Psychocounsel" target="_blank" class="btn btn--outline">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card slide-up" data-delay="0.2">
+                    <div class="project-header">
+                        <h3>Registration Portal</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>Built scalable application handling 500+ concurrent users with 99.5% uptime. Optimized backend processes improving system reliability by 30%. Designed responsive interface across multiple device types.</p>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn btn--outline" disabled>
+                            <i class="fas fa-lock"></i> Private Repository
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-card slide-up" data-delay="0.3">
+                    <div class="project-header">
+                        <h3>E-commerce Website</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>Developed responsive platform supporting 5+ device types with 95% cross-browser compatibility. Integrated product displays, shopping cart, and checkout process. Implemented modern design elements enhancing user experience.</p>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/Manik2110/Coffe-Website" target="_blank" class="btn btn--outline">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card slide-up" data-delay="0.4">
+                    <div class="project-header">
+                        <h3>NbliK (Company Project)</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>Collaborated with cross-functional team of 5+ members in modern web development. Led responsive interface design across different devices and platforms. Enhanced team productivity through effective collaboration methodologies.</p>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn btn--outline" disabled>
+                            <i class="fas fa-briefcase"></i> Company Project
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title slide-up">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="certification-card slide-up" data-delay="0.1">
+                    <div class="cert-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h3>AWS Educate Certifications</h3>
+                    <p class="cert-provider">Amazon Web Services</p>
+                    <p class="cert-description">Training: Cloud 101, Storage, Security, Serverless, CloudOps, Networking, Databases, Compute</p>
+                </div>
+                <div class="certification-card slide-up" data-delay="0.2">
+                    <div class="cert-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Zero To Hero Python BootCamp</h3>
+                    <p class="cert-provider">UDEMY</p>
+                    <p class="cert-description">Advanced Python programming, clean code practices, problem-solving</p>
+                </div>
+                <div class="certification-card slide-up" data-delay="0.3">
+                    <div class="cert-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p class="cert-provider">UDEMY</p>
+                    <p class="cert-description">Comprehensive front-end development mastering HTML5 and CSS3</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title slide-up">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info slide-up" data-delay="0.1">
+                    <h3>Let's Work Together</h3>
+                    <p>I'm always interested in new opportunities and collaborations. Feel free to reach out if you'd like to discuss a project or just say hello!</p>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:manikjoshi1988@gmail.com">manikjoshi1988@gmail.com</a>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:7351972812">+91 7351972812</a>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/Manik2110" target="_blank">GitHub Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form slide-up" data-delay="0.2" id="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Manik Joshi. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="mailto:manikjoshi1988@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:7351972812"><i class="fas fa-phone"></i></a>
+                    <a href="https://github.com/Manik2110" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <button id="back-to-top" class="back-to-top">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

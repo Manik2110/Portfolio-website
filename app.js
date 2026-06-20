@@ -280,17 +280,25 @@ function showFieldError(field, message) {
 function submitContactForm(form, data) {
     const submitButton = form.querySelector('button[type="submit"]');
     const originalText = submitButton.textContent;
-    
+
     submitButton.textContent = 'Sending...';
     submitButton.disabled = true;
-    
-    // Simulate form submission
-    setTimeout(() => {
+
+    emailjs.send('service_4qr9x4k', 'template_t8k1zwy', {
+        from_name: data.name,
+        from_email: data.email,
+        subject: data.subject,
+        message: data.message
+    }).then(() => {
         showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
         form.reset();
         submitButton.textContent = originalText;
         submitButton.disabled = false;
-    }, 2000);
+    }).catch(() => {
+        showNotification('Something went wrong. Please try again.', 'error');
+        submitButton.textContent = originalText;
+        submitButton.disabled = false;
+    });
 }
 
 // Email validation helper
